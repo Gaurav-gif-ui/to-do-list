@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lunafluffyyyy - Your Smart To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>lunafluffyyyy</h1>
+            <p>Organize your life, one task at a time</p>
+        </header>
+        
+        <div class="todo-app">
+            <div class="input-section">
+                <input type="text" id="task-input" placeholder="Add a new task..." autocomplete="off">
+                <button id="add-btn"><i class="fas fa-plus"></i></button>
+            </div>
+            
+            <div class="controls">
+                <div class="filters">
+                    <span class="active" id="all">All</span>
+                    <span id="active">Active</span>
+                    <span id="completed">Completed</span>
+                </div>
+                <button id="clear-completed">Clear Completed</button>
+            </div>
+            
+            <ul id="task-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+            
+            <div class="stats">
+                <span id="tasks-left">0 tasks left</span>
+                <span id="completed-count">0 completed</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
